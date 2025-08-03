@@ -21,10 +21,15 @@ function App() {
   const [searchResult, setSearchResult] = useState<Student | null>(null);
   const [searchAttempted, setSearchAttempted] = useState(false);
   const [currentPage, setCurrentPage] = useState<'main' | 'results' | 'schedule' | 'news' | 'donation'>('main');
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
   
   const stats = calculateStats(rankedStudents);
+
+  // Set dark mode as default on component mount
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
 
   // Toggle dark mode
   const toggleDarkMode = () => {
