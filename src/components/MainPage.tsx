@@ -345,18 +345,19 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
               {/* Contact persons */}
-              <div className="space-y-4">
+              <div className="lg:col-span-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* الشيخ مصباح عبدالمنجي الدكاني */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center gap-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 text-center">
+                  <div className="flex flex-col items-center gap-4">
                     <img 
                       src="https://www.mediafire.com/convkey/8b5a/uakbupoy7z7dwjxzg.jpg" 
                       alt="الشيخ مصباح عبدالمنجي الدكاني"
-                      className="w-16 h-16 rounded-full object-cover border-2 border-yellow-300 shadow-lg"
+                      className="w-20 h-20 rounded-full object-cover border-3 border-yellow-300 shadow-lg"
                     />
-                    <div className="flex-1">
+                    <div>
                       <button
                         onClick={() => {
                           const modal = document.createElement('div');
@@ -386,20 +387,20 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                       >
                         الشيخ مصباح عبدالمنجي الدكاني
                       </button>
-                      <p className="text-blue-200 text-sm">للتواصل عبر الواتساب والفيسبوك</p>
+                      <p className="text-blue-200 text-sm mt-2">للتواصل عبر الواتساب والفيسبوك</p>
                     </div>
                   </div>
                 </div>
 
                 {/* الاستاذ اسلام سعيد الشقيدي */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center gap-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 text-center">
+                  <div className="flex flex-col items-center gap-4">
                     <img 
                       src="https://www.mediafire.com/convkey/c5b8/xomyambcahs3tfdzg.jpg" 
                       alt="الاستاذ اسلام سعيد الشقيدي"
-                      className="w-16 h-16 rounded-full object-cover border-2 border-green-300 shadow-lg"
+                      className="w-20 h-20 rounded-full object-cover border-3 border-green-300 shadow-lg"
                     />
-                    <div className="flex-1">
+                    <div>
                       <button
                         onClick={() => {
                           const modal = document.createElement('div');
@@ -429,23 +430,21 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                       >
                         الاستاذ اسلام سعيد الشقيدي
                       </button>
-                      <p className="text-blue-200 text-sm">للتواصل عبر الواتساب والفيسبوك</p>
+                      <p className="text-blue-200 text-sm mt-2">للتواصل عبر الواتساب والفيسبوك</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="space-y-4">
 
                 {/* احمد طارق عبدالهادي علي الدين */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center gap-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 text-center">
+                  <div className="flex flex-col items-center gap-4">
                     <img 
                       src="https://www.mediafire.com/convkey/b8c8/gfbsdvor275i0lnzg.jpg"
                       alt="البشمهندس احمد طارق عبدالهادي"
-                      className="w-16 h-16 rounded-full object-cover border-2 border-purple-300 shadow-lg"
+                      className="w-20 h-20 rounded-full object-cover border-3 border-purple-300 shadow-lg"
                     />
-                    <div className="flex-1">
+                    <div>
                       <button
                         onClick={() => {
                           const modal = document.createElement('div');
@@ -475,15 +474,16 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                       >
                         البشمهندس احمد طارق عبدالهادي
                       </button>
-                      <p className="text-blue-200 text-sm">للتواصل عبر الواتساب والفيسبوك</p>
+                      <p className="text-blue-200 text-sm mt-2">للتواصل عبر الواتساب والفيسبوك</p>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
 
             {/* Location section */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 text-center">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="bg-gradient-to-r from-red-500 to-pink-500 p-3 rounded-full shadow-lg">
                   <svg
@@ -500,7 +500,7 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                 href="https://maps.app.goo.gl/BA3xbuvekc8kgKaMA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 transition-colors font-semibold text-lg block text-center"
+                className="text-white hover:text-yellow-300 transition-colors font-semibold text-lg block"
               >
                 دار المناسبات الشرقيه، دمليج، منوف، المنوفية
               </a>
